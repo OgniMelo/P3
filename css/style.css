@@ -1,0 +1,52 @@
+#loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  animation: load-page 2s ease-in-out forwards;
+}
+
+#loader-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 7.5px;
+  stroke-dasharray:  285;
+  stroke-dashoffset: 285;
+  stroke-linecap: round;
+}
+
+#loader-bg {
+  stroke: white;
+  stroke-dashoffset: 0;
+}
+
+#loader {
+  stroke: #9356DC;
+  animation: load-page 2s ease-in-out forwards;
+}
+
+@keyframes load-page {
+  0% {
+    stroke-dashoffset: 285;
+  }
+  10% {
+    stroke-dashoffset: 285;
+  }
+  90% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    visibility: hidden;
+  }
+}
