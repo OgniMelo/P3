@@ -279,6 +279,11 @@ section {
 }
 
 .fa-heart {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition-property: transform;
   transition-duration: 500ms;
   overflow: hidden;
