@@ -65,6 +65,7 @@ circle {
 html {
   font-family: "Roboto";
   min-width: 325px;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -130,6 +131,10 @@ section {
   background: linear-gradient(to bottom right, #ED74DA, #9356DC);
   color: white;
   font-size: 1.1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #explore-btn:hover {
@@ -232,7 +237,12 @@ section {
   flex-direction: column;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 0 2px 5px grey;
   overflow: hidden;
+}
+
+.restaurant:hover {
+  box-shadow: 0 0 10px #ED74DA;
 }
 
 .restaurant .new {
@@ -353,4 +363,21 @@ li {
 
 li i {
   width: 30px;
+}
+
+/* Tablette et plus */
+@media screen and (min-width: 641px) {
+  html {
+    margin: 0 12.5%;
+    box-shadow: 0 0 30px #9356DC;
+  }
+
+  #process {
+    align-items: center;
+  }
+
+  #restaurants-title {
+    display: flex;
+    justify-content: center;
+  }
 }
