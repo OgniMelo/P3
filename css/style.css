@@ -140,17 +140,20 @@ section {
 
 #process {
   height: 350px;
-  width: 400px;
   max-width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 #process ol {
   height: 250px;
+  width: 330px;
   padding: 0 15px;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-self: center;
   counter-reset: process-elem;
 }
 
@@ -209,6 +212,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 #restaurants-list a {
@@ -223,7 +227,7 @@ section {
 .restaurant {
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 330px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
