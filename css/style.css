@@ -288,6 +288,9 @@ section {
 }
 
 .heart:hover .far.fa-heart {
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-delay: 300ms;
   transform: scale(0);
 }
 
@@ -301,8 +304,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: transform;
-  transition-duration: 500ms;
   overflow: hidden;
 }
 
@@ -318,6 +319,8 @@ section {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  transition-property: transform;
+  transition-duration: 500ms;
   transform: scale(0);
 }
 
